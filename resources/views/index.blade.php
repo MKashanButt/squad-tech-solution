@@ -245,7 +245,67 @@
     </div>
     <div class="workSamplesSliderBtns banner-flex">
         <div class="sliderHeading">
-            <h2 class="bg font-40 mtop-20 mbot-20">Our Work Samples</h2>
+            <h2 class="bg font-40 mtop-20 mbot-20">Our Logo Samples</h2>
+        </div>
+        <div class="slider-btns">
+            <button class="slide-arrow" id="slide-arrow-prev">
+                &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+                &#8250;
+            </button>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slider-wrapper">
+            <div class="slides-container" id="slides-container">
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-one.png') }}" alt="project-img-2" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-three.png') }}" alt="project-img-3" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-four.png') }}" alt="project-img-4" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-five.png') }}" alt="project-img-5" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-six.png') }}" alt="project-img-6" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-seven.png') }}" alt="project-img-7" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-eight.png') }}" alt="project-img-8" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-nine.png') }}" alt="project-img-9" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-ten.png') }}" alt="project-img-10" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-one.png') }}" alt="project-img-1" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-eleven.png') }}" alt="project-img-11" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-twelve.png') }}" alt="project-img-12" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-thirteen.png') }}"
+                        alt="project-img-13" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-fourteen.png') }}"
+                        alt="project-img-114" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-sixteen.png') }}"
+                        alt="project-img-16" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-eighteen.png') }}"
+                        alt="project-img-18" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-nineteen.png') }}"
+                        alt="project-img-19" />
+                </div>
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-twenty.png') }}" alt="project-img-20" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="workSamplesSliderBtns banner-flex">
+        <div class="sliderHeading">
+            <h2 class="bg font-40 mtop-20 mbot-20">Our Website Samples</h2>
         </div>
         <div class="slider-btns">
             <button class="slide-arrow" id="slide-arrow-prev">
@@ -310,6 +370,56 @@
             </div>
         </div>
     </div>
+    <div class="banner center services-home" data-aos="fade-up" data-aos-duration="1000">
+        <span class="heading-tagline">Customer Reviews</span>
+        <h2 class="mtop-10 mbot-10 font-40 bg">
+            Customer Satisfaction! Our Top Priority
+        </h2>
+        <div class="banner-flex">
+            <div class="tabs">
+                <div class="icon">
+                    <img src="{{ asset('images/user-icon.png') }}" alt="" />
+                </div>
+                <div class="text" style="text-align: left">
+                    <a href="{{ route('services') }}">
+                        <h3 class="mbot-10">John Parker</h3>
+                        <p>
+                            SquadTech has completely transformed how we manage our tech needs. Their team is fast,
+                            reliable, and always professional. Highly recommend!
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="icon">
+                    <img src="{{ asset('images/user-icon.png') }}" alt="" />
+                </div>
+                <div class="text" style="text-align: left">
+                    <a href="{{ route('services') }}">
+                        <h3 class="mbot-10">Emily Rodriguez</h3>
+                        <p>
+                            Our workflow has never been smoother. Their solutions really make a difference and help us
+                            save time and resources
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="icon">
+                    <img src="{{ asset('images/user-icon.png') }}" alt="" />
+                </div>
+                <div class="text" style="text-align: left">
+                    <a href="{{ route('services') }}">
+                        <h3 class="mbot-10">Michael Thompson</h3>
+                        <p>
+                            The support is outstanding! Every question is answered promptly, and they
+                            genuinely care about making sure we’re satisfied.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="popUp">
         <div class="form banner-flex">
             <div class="img">
@@ -342,28 +452,28 @@
 
             $subject = "Home Page Quote Submission";
             $message = "
-                                                                                                                    Customer Information
-                                                                                                            Customer Name = $name
-                                                                                                            Customer Email = $email
-                                                                                                            Customer Number = $number
-                                                                                                            Project Type = $project_type
-                                                                                                            Project Description = $project_description
-                                                                                                            "
+                                                                                                                                                                                                                                                                                                                                                            Customer Information
+                                                                                                                                                                                                                                                                                                                                                    Customer Name = $name
+                                                                                                                                                                                                                                                                                                                                                    Customer Email = $email
+                                                                                                                                                                                                                                                                                                                                                    Customer Number = $number
+                                                                                                                                                                                                                                                                                                                                                    Project Type = $project_type
+                                                                                                                                                                                                                                                                                                                                                    Project Description = $project_description
+                                                                                                                                                                                                                                                                                                                                                    "
             ;
             $headers = 'From:' . $sender;
 
             if (mail($recipient, $subject, $message, $headers)) {
                 echo "
-                                                                                                                <script>
-                                                                                                                    alert('Form Submitted')
-                                                                                                                </script>
-                                                                                                                ";
+                                                                                                                                                                                                                                                                                                                                                        <script>
+                                                                                                                                                                                                                                                                                                                                                            alert('Form Submitted')
+                                                                                                                                                                                                                                                                                                                                                        </script>
+                                                                                                                                                                                                                                                                                                                                                        ";
             } else {
                 echo "
-                                                                                                                <script>
-                                                                                                                    alert('Plz Try Again')
-                                                                                                                </script>
-                                                                                                                ";
+                                                                                                                                                                                                                                                                                                                                                        <script>
+                                                                                                                                                                                                                                                                                                                                                            alert('Plz Try Again')
+                                                                                                                                                                                                                                                                                                                                                        </script>
+                                                                                                                                                                                                                                                                                                                                                        ";
             }
         }
     @endphp
