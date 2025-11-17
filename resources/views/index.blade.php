@@ -136,7 +136,6 @@
                     </a>
                 </div>
             </div>
-            </a>
         </div>
         <div class="banner-flex">
             <div class="tabs">
@@ -190,7 +189,6 @@
                     </a>
                 </div>
             </div>
-            </a>
         </div>
         <div class="banner-flex">
             <div class="tabs">
@@ -240,7 +238,6 @@
                     </p>
                 </div>
             </div>
-            </a>
         </div>
     </div>
     <div class="workSamplesSliderBtns banner-flex">
@@ -455,28 +452,28 @@
 
             $subject = "Home Page Quote Submission";
             $message = "
-                                                                                                                                                                                                                                                                                                                                                                                                    Customer Information
-                                                                                                                                                                                                                                                                                                                                                                                            Customer Name = $name
-                                                                                                                                                                                                                                                                                                                                                                                            Customer Email = $email
-                                                                                                                                                                                                                                                                                                                                                                                            Customer Number = $number
-                                                                                                                                                                                                                                                                                                                                                                                            Project Type = $project_type
-                                                                                                                                                                                                                                                                                                                                                                                            Project Description = $project_description
-                                                                                                                                                                                                                                                                                                                                                                                            "
+                                                                                                                                                                                                                                                                                                                                                                                                                    Customer Information
+                                                                                                                                                                                                                                                                                                                                                                                                            Customer Name = $name
+                                                                                                                                                                                                                                                                                                                                                                                                            Customer Email = $email
+                                                                                                                                                                                                                                                                                                                                                                                                            Customer Number = $number
+                                                                                                                                                                                                                                                                                                                                                                                                            Project Type = $project_type
+                                                                                                                                                                                                                                                                                                                                                                                                            Project Description = $project_description
+                                                                                                                                                                                                                                                                                                                                                                                                            "
             ;
             $headers = 'From:' . $sender;
 
             if (mail($recipient, $subject, $message, $headers)) {
                 echo "
-                                                                                                                                                                                                                                                                                                                                                                                                <script>
-                                                                                                                                                                                                                                                                                                                                                                                                    alert('Form Submitted')
-                                                                                                                                                                                                                                                                                                                                                                                                </script>
-                                                                                                                                                                                                                                                                                                                                                                                                ";
+                                                                                                                                                                                                                                                                                                                                                                                                                <script>
+                                                                                                                                                                                                                                                                                                                                                                                                                    alert('Form Submitted')
+                                                                                                                                                                                                                                                                                                                                                                                                                </script>
+                                                                                                                                                                                                                                                                                                                                                                                                                ";
             } else {
                 echo "
-                                                                                                                                                                                                                                                                                                                                                                                                <script>
-                                                                                                                                                                                                                                                                                                                                                                                                    alert('Plz Try Again')
-                                                                                                                                                                                                                                                                                                                                                                                                </script>
-                                                                                                                                                                                                                                                                                                                                                                                                ";
+                                                                                                                                                                                                                                                                                                                                                                                                                <script>
+                                                                                                                                                                                                                                                                                                                                                                                                                    alert('Plz Try Again')
+                                                                                                                                                                                                                                                                                                                                                                                                                </script>
+                                                                                                                                                                                                                                                                                                                                                                                                                ";
             }
         }
     @endphp
