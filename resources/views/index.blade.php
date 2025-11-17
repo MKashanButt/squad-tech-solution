@@ -259,46 +259,49 @@
     <div class="slider">
         <div class="slider-wrapper">
             <div class="slides-container" id="slides-container">
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-one.png') }}" alt="project-img-2" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-one.webp') }}" alt="project-img-2" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-three.png') }}" alt="project-img-3" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-three.webp') }}" alt="project-img-3" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-four.png') }}" alt="project-img-4" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-four.webp') }}" alt="project-img-4" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-five.png') }}" alt="project-img-5" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-five.webp') }}" alt="project-img-5" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-six.png') }}" alt="project-img-6" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-six.webp') }}" alt="project-img-6" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-seven.png') }}" alt="project-img-7" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-seven.webp') }}" alt="project-img-7" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-eight.png') }}" alt="project-img-8" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-eight.webp') }}" alt="project-img-8" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-nine.png') }}" alt="project-img-9" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-nine.webp') }}" alt="project-img-9" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-ten.png') }}" alt="project-img-10" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-ten.webp') }}" alt="project-img-10" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-one.png') }}" alt="project-img-1" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-one.webp') }}" alt="project-img-1" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-eleven.png') }}" alt="project-img-11" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-eleven.webp') }}"
+                        alt="project-img-11" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-twelve.png') }}" alt="project-img-12" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-twelve.webp') }}"
+                        alt="project-img-12" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-thirteen.png') }}"
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-thirteen.webp') }}"
                         alt="project-img-13" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-fourteen.png') }}"
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-fourteen.webp') }}"
                         alt="project-img-114" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-sixteen.png') }}"
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-sixteen.webp') }}"
                         alt="project-img-16" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-eighteen.png') }}"
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-eighteen.webp') }}"
                         alt="project-img-18" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-nineteen.png') }}"
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-nineteen.webp') }}"
                         alt="project-img-19" />
                 </div>
-                <div class="slide logo"><img src="{{ asset('images/logos/sample-twenty.png') }}" alt="project-img-20" />
+                <div class="slide logo"><img src="{{ asset('images/logos/sample-twenty.webp') }}"
+                        alt="project-img-20" />
                 </div>
             </div>
         </div>
@@ -452,28 +455,28 @@
 
             $subject = "Home Page Quote Submission";
             $message = "
-                                                                                                                                                                                                                                                                                                                                                            Customer Information
-                                                                                                                                                                                                                                                                                                                                                    Customer Name = $name
-                                                                                                                                                                                                                                                                                                                                                    Customer Email = $email
-                                                                                                                                                                                                                                                                                                                                                    Customer Number = $number
-                                                                                                                                                                                                                                                                                                                                                    Project Type = $project_type
-                                                                                                                                                                                                                                                                                                                                                    Project Description = $project_description
-                                                                                                                                                                                                                                                                                                                                                    "
+                                                                                                                                                                                                                                                                                                                                                                                    Customer Information
+                                                                                                                                                                                                                                                                                                                                                                            Customer Name = $name
+                                                                                                                                                                                                                                                                                                                                                                            Customer Email = $email
+                                                                                                                                                                                                                                                                                                                                                                            Customer Number = $number
+                                                                                                                                                                                                                                                                                                                                                                            Project Type = $project_type
+                                                                                                                                                                                                                                                                                                                                                                            Project Description = $project_description
+                                                                                                                                                                                                                                                                                                                                                                            "
             ;
             $headers = 'From:' . $sender;
 
             if (mail($recipient, $subject, $message, $headers)) {
                 echo "
-                                                                                                                                                                                                                                                                                                                                                        <script>
-                                                                                                                                                                                                                                                                                                                                                            alert('Form Submitted')
-                                                                                                                                                                                                                                                                                                                                                        </script>
-                                                                                                                                                                                                                                                                                                                                                        ";
+                                                                                                                                                                                                                                                                                                                                                                                <script>
+                                                                                                                                                                                                                                                                                                                                                                                    alert('Form Submitted')
+                                                                                                                                                                                                                                                                                                                                                                                </script>
+                                                                                                                                                                                                                                                                                                                                                                                ";
             } else {
                 echo "
-                                                                                                                                                                                                                                                                                                                                                        <script>
-                                                                                                                                                                                                                                                                                                                                                            alert('Plz Try Again')
-                                                                                                                                                                                                                                                                                                                                                        </script>
-                                                                                                                                                                                                                                                                                                                                                        ";
+                                                                                                                                                                                                                                                                                                                                                                                <script>
+                                                                                                                                                                                                                                                                                                                                                                                    alert('Plz Try Again')
+                                                                                                                                                                                                                                                                                                                                                                                </script>
+                                                                                                                                                                                                                                                                                                                                                                                ";
             }
         }
     @endphp
